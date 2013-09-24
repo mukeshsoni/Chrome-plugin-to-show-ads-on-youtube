@@ -1,0 +1,47 @@
+#channel-preview {
+	position: absolute;
+	width: 720px;
+	height: 584px;
+	left: 71px;
+	top: 52px;
+}
+
+#overlay-ad {
+	display: none;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	z-index: 10000;
+	top: 250px;
+}
+
+#ad-image-upload {
+	margin-left: 10px;
+	display: none;
+}
+
+#file-upload-status {
+	display: none;
+}
+
+#overlay-ad-fullsize {
+	position: absolute;
+	z-index: 10001;
+	top: 0;
+	left: 50px;
+	overflow: hidden;
+	display: none;
+	border: solid 1px black;
+	background: white;
+}
+
+#btv-close-box {
+	color: black;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	float: right;
+	font-size: 20px;
+	z-index: 10002;
+}

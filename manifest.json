@@ -1,0 +1,25 @@
+{
+   "manifest_version": 2,
+   "name": "OTT Chrome Extension",
+   "description": "OTT Chrome Extension",
+   "permissions": [
+      "tabs",
+       "http://www.google.com/", "http://localhost/tvads/*", "http://ads.brizztv.com/*"
+     ],
+   "content_scripts": [
+      {
+         "js": ["loader.js"],
+         "css": ["ott.css"],
+         "matches": [ "*://*.youtube.com/*" ],
+         "run_at": "document_start"
+      }
+   ],
+
+   "version":"1.0",
+   "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+   },
+   "web_accessible_resources":["jquery.js", "ott.js", "ott2.js", "jquery_resize.js"],
+   "content_security_policy": "script-src 'self' http://localhost; object-src 'self'"
+}
